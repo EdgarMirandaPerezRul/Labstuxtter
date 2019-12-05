@@ -2,7 +2,7 @@ directory=$(pwd)
 
 preparacion="mkdir dir1 2>/dev/null"
 
-instrucciones=(
+ejercicios=
 "1. Crea el archivo file1.txt"
 "2. Cambia el timestamp del archivo file1.txt."
 "3. Crea el archivo file2.txt."
@@ -19,9 +19,9 @@ instrucciones=(
 "12. Despliega sólo las últimas dos líneas del archivo hello.txt."
 "13. Despliega las últimas líneas del archivo hello.txt."
 "14. Muestra las estadísticas para el archivo hello.txt."
-"15. Muestra las estadísticas para la carpeta dir1.")
+"15. Muestra las estadísticas para la carpeta dir1."
 
-respuestas=(
+respuestas=
 "touch file1.txt"
 "touch file1.txt"
 "touch file2.txt"
@@ -37,18 +37,18 @@ respuestas=(
 "tail hello.txt"
 "stat hello.txt"
 "stat dir1"
-)
 
-pistas=(
+
+pistas=
 "Pista: Usa la terminal para \"tocar\" un archivo vacío"
 "Pista: Es otro uso del comando anterior."
 "-n"
 "Pista: A los folders en linux se les llama \"directorios\""
 "Pista: Posible traducción de despejar en inglés."
 "Pista: Es un fénomeno por el cual se repiten los sonidos."
-)
 
-comandos=(         
+
+comandos=         
 "touch file1.txt; ls --color=auto"         
 "touch file1.txt; ls -l --color=auto file1.txt"         
 "touch file2.txt; ls --color=auto"         
@@ -63,6 +63,6 @@ comandos=(
 "tail -2 hello.txt"   
 "tail hello.txt"     
 "stat hello.txt" 
-"stat dir1" ) 
+"stat dir1"  
 
 limpieza="rm -i file1.txt; rm -i file2.txt; rm -i hello.txt; rm -ri dir1"
